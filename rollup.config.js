@@ -2,7 +2,7 @@ import resolve from "@rollup/plugin-node-resolve";
 import babel from "@rollup/plugin-babel";
 import commonjs from "rollup-plugin-commonjs";
 import typescript from "rollup-plugin-typescript";
-import.meta.url
+
 export default {
 	input: "src/index.ts", // 打包入口
 	output: {
