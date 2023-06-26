@@ -1,10 +1,13 @@
 {
 	"name": "utillibs",
-	"version": "1.0.0",
+	"version": "0.0.4",
+	"types": "./types/index.d.ts",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"build": "rollup --config"
+		"build:types": "tsc",
+		"build": "rollup --config",
+		"all": "rm -rf dist && tsc && rollup --config"
 	},
 	"repository": {
 		"type": "git",
@@ -21,7 +24,6 @@
 		"@babel/core": "^7.22.5",
 		"@babel/preset-env": "^7.22.5",
 		"@rollup/plugin-babel": "^6.0.3",
-		"@rollup/plugin-node-resolve": "^15.1.0",
 		"rollup": "^3.25.2",
 		"rollup-plugin-commonjs": "^10.1.0",
 		"rollup-plugin-typescript": "^1.0.1",

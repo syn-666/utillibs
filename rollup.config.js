@@ -17,6 +17,6 @@ export default {
 		resolve(), // 查找和打包node_modules中的第三方模块
 		commonjs(), // 将 CommonJS 转换成 ES2015 模块供 Rollup 处理
 		typescript(), // 解析TypeScript
-		babel({ babelHelpers: "bundled" }) // babel配置,编译es6
+		babel({ babelHelpers: "bundled", exclude: ["node_modules/**"] }) // babel配置,编译es6
 	]
 };
